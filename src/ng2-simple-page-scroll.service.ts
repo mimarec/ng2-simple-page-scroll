@@ -7,10 +7,10 @@ export declare type TargetElement = HTMLElement | string;
 @Injectable()
 export class SimplePageScrollService {
 
-    private document: Document;
+    private document: any;
     private body: HTMLBodyElement;
 
-    public constructor(@Inject(DOCUMENT) document: Document) {
+    public constructor(@Inject(DOCUMENT) document: any) {
         this.document = document;
         this.body = <HTMLBodyElement>document.body;
     }
